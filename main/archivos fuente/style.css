@@ -1,0 +1,212 @@
+* body {
+  margin: 0;
+      padding: 0;
+
+}
+
+
+.text-al {
+  text-align: center;
+}
+
+@font-face {
+  font-family: ComicNeue;
+  src:url(ComicNeue-2.ttf)
+}
+
+body {
+  font-family: ComicNeue;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.4em;
+  font-weight: 600;
+  }
+
+a{
+  display: block;
+  width: 50px;
+  font-size: 1.2em;
+  font-family: ComicNeue;
+  font-weight: 700;
+  background-color: #ffaa7c;
+  border-radius: 10px;
+  padding: 15px 30px;
+  margin: 150px 130px;
+  color:white
+}
+
+a:hover {
+  background-color: transparent;
+  border: 2px solid #ffa97b;
+  color: #ffc09f;
+}
+
+@font-face {
+    font-family: ComicNeue;
+    src:url(ComicNeue-Regular.ttf)
+}
+
+body {
+    font-family: ComicNeue;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 160px;
+    height: 25px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.box__loading {
+    height: 100%;
+    width: 100%;
+    animation: loading 5s;
+    border-radius: 5px;
+    background-color: #fffd87;
+}
+
+ 
+@keyframes loading {
+    0%{
+        
+    width: 0;
+}
+100% {
+    width: 160px;
+}
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+p{
+    font-size: 1.3em;
+    font-weight: bold;
+    opacity: 90%;
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000; /* Color de fondo negro */
+    color: #fff; /* Color del texto blanco */;
+    padding: 25px; 
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    animation: fadeOut 3s ease-in-out;
+  }
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      
+      .music-toggle-container {
+        position: fixed;
+        top: 10px;
+        right: 50%;
+        transform: translate(-50%, 0);
+        z-index: 1;
+      }
+      
+  
+      #love-letter-container {
+        position: fixed;
+        top: 0;
+        left: 53%;
+        transform: translateX(-50%);
+        text-align: center;
+        padding-top: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 0;
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+    
+      .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 5px solid #d9ff92;
+        width: 80%;
+        max-width: 400px;
+        position: relative;
+      }
+    
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #888;
+        cursor: pointer;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      
+      .fade-in {
+        animation: fade-in 1s forwards;
+      }
+      
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
